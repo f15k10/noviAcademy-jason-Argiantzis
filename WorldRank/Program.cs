@@ -1,7 +1,9 @@
 ﻿using WorldRank;
+using System.Linq;
 
 var players = new List<Player>();
-
+InMemoryWalletRepository walletRepository = new InMemoryWalletRepository();
+InMemoryPlayerRepository playerRepository = new InMemoryPlayerRepository(players);
 while (true)
 {
     Console.WriteLine("\n=== WorldRank Player Registry ===");
@@ -38,16 +40,39 @@ void AddPlayer()
 
     Console.Write("Score: ");
     var scoreInput = Console.ReadLine();
+
     if (!int.TryParse(scoreInput, out var score))
     {
         Console.WriteLine("Score must be a whole number.");
         return;
     }
+    Console.Write("Wallet Balance: ");
+    decimal balance = Console.Read();
+    //Later check functions
 
-    var player = new Player(name);
+    Console.Write("Currency: ");
+    //For now i use only those 3 currencies, but in the future i will add more currencies
+    Currency currency = Console.ReadLine() switch
+    {
+        "USD" => Currency.USD,
+        "EUR" => Currency.EUR,
+        "GBP" => Currency.GBP,
+        _ => Currency.USD // Default to USD if input is invalid
+    };
+
+    Dictionary<Currency,Wallet> wallet= new Dictionary<Currency, Wallet>();
+
+    //Pass the values to the wallet dictionary, and then pass the dictionary to the player constructor
+    wallet.Add(currency, new Wallet(balance, currency, false));
+    
+    var player = new Player(name, wallet);
+
+   
+
     player.UpdateScore(score);
 
-    players.Add(player);
+    playerRepository.AddPlayer(player);
+
     Console.WriteLine("Player added successfully.");
 }
 
