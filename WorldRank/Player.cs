@@ -1,5 +1,12 @@
 ﻿namespace WorldRank;
 
+interface IPlayer
+{
+    int Id { get; }
+    string Name { get; set; }
+    int Score { get; set; }
+}
+
 public class Player
 {
     public Guid Id { get; }
