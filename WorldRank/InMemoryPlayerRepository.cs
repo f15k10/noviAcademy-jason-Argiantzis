@@ -34,7 +34,17 @@ namespace WorldRank
         }
         void GroupPlayersByScore(int score)
         {
+            var v = _players.GroupBy(item => score);
 
+            foreach (var yearGroup in v)
+            {
+                Console.WriteLine($"Key: {yearGroup.Key}");
+                foreach (var student in yearGroup)
+                {
+                    Console.WriteLine($"\t{student}");
+
+                }
+            }
         }
 
         void IPlayerRepository.GroupPlayersByScore(int score)
