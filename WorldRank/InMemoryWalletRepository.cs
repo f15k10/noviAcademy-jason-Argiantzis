@@ -26,7 +26,12 @@ namespace WorldRank
 
         public List<Wallet> GetByPlayer(int playerId)
         {
-            throw new NotImplementedException();
+            /*
+            var query1 = from player in _players
+                                 where player.Id == playerId
+                              select player._wallet;
+            */
+            return _players.Where(item => item.Id == playerId).SelectMany(item => item._wallet.Values).ToList();
         }
     }
 }

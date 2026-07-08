@@ -14,6 +14,7 @@ while (true)
     Console.WriteLine("4. Add Wallet to player");
     Console.WriteLine("5. Get Player Wallets");
     Console.WriteLine("6. Find Player By Id");
+    Console.WriteLine("7. Desplay All players by score");
     Console.WriteLine("0. Exit");
     Console.Write("> ");
 
@@ -25,6 +26,7 @@ while (true)
         "4" => AddWalletToPlayer,
         "5" => GetWalletOfPlayer,
         "6" => FindPlayerById,
+        "7" => GroupPlayersByScore,
         "0" => null,
         _ => () => Console.WriteLine("Unknown option.")
     };
@@ -123,6 +125,16 @@ void SearchPlayer()
     Console.Write("Id not a number");
 }
 
+void GroupPlayersByScore()
+{
+    Console.Write("Give Score number: ");
+    var Score = Console.ReadLine();
+    int.TryParse(Score, out var input);
+    {
+        playerRepository.GroupPlayersByScore(input);
+    }
+    Console.Write("Score not a number");
+}
 #endregion Player Methods
 
 
@@ -132,7 +144,7 @@ void AddWalletToPlayer()
 {
     Console.Write("Give player id: ");
     var id = Console.ReadLine();
-    Console.Write("Give Currency: 0 - NONE |  1 - EUR | 2 - USD\n");
+    Console.Write("Give Currency: 0 - NONE |  1 - EUR | 2 - USD  | 3 - GBP |  4 - CAD |  5 - JPY |  6 - AUD\n");
     var currency = Console.ReadLine();
 
     Currency cur = Currency.NONE;
@@ -151,6 +163,22 @@ void AddWalletToPlayer()
         case "2":
             cur =
             Currency.USD;
+            break;
+        case "3":
+            cur =
+            Currency.GBP;
+            break;
+        case "4":
+            cur =
+            Currency.CAD;
+            break;
+        case "5":
+            cur =
+            Currency.JPY;
+            break;
+        case "6":
+            cur =
+            Currency.AUD;
             break;
     }
 
