@@ -6,26 +6,31 @@ namespace WorldRank
 {
     public class InMemoryPlayerRepository : IPlayerRepository
     {
-        public List<Player> players = new List<Player>();
+        public List<Player> _players = new List<Player>();
         public InMemoryPlayerRepository(List<Player> p)
         {
-           this.players=p;
+           _players=p;
         }
 
         public void AddPlayer(Player p)
         {
             //Do the checks here to see if the player already exists in the list, if not add it to the list
-            players.Add(p);
+            _players.Add(p);
         }
         public Player FindPlayer(int playerId)
         {
             //Find the player by id and return it
-            return players.Find(p => p.Id.Equals(playerId));
+            return _players.Where(item => item.Id == playerId).FirstOrDefault();
         }
 
         public void DeletePlayer(int playerId)
         {
+            var player = _players.Where(item => item.Id == playerId).FirstOrDefault();
 
+            if (player != null)
+            {
+                _players.Remove(player);
+            }
         }
         void GroupPlayersByScore(int score)
         {

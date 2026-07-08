@@ -3,27 +3,30 @@
 
 interface IPlayer
 {
-    Guid Id { get; }
+    int Id { get; set; }
     string Name { get; set; }
     int Score { get; set; }
 }
 
 public class Player : IPlayer
 {
-    public Guid Id { get; }
+    public int Id { get; set; }
     public string Name { get; set; }
     public int Score { get;  set; }
 
-    public Dictionary<Currency,Wallet> wallet { get; set; }
-
-    public Player(string name , Dictionary<Currency, Wallet> wallet)
+    public Dictionary<Currency,Wallet> _wallet { get; set; }
+    public Player(int id , string name) {
+       Name = name;
+        Id = id;
+    }
+    public Player(int id ,string name , Dictionary<Currency, Wallet> wallet)
     {
         if (string.IsNullOrEmpty(name))
             throw new ArgumentException("Name cannot be null or empty.", nameof(name));
 
-        Id = Guid.NewGuid();
+        Id = id;
         Name = name;
-        this.wallet = wallet;
+        _wallet = wallet;
 
     }
 
