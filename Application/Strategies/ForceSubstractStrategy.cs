@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Application.Strategies
 {
-    public class ForceSubstractStrategy
+    public class ForceSubstractStrategy : IFundsStrategy
     {
         public FundsOperation Operation => FundsOperation.ForceSubstract;
 

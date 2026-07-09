@@ -33,7 +33,8 @@ while (true)
 	Console.WriteLine("11. Block wallet");
 	Console.WriteLine("12. Unblock wallet");
 	Console.WriteLine("13. Update wallet balance");
-	Console.WriteLine("0. Exit");
+    Console.WriteLine("14. Apply funds operation(strategy)");
+    Console.WriteLine("0. Exit");
 	Console.Write("> ");
 
 	Action? action = Console.ReadLine() switch

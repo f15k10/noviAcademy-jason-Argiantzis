@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Application.Strategies
 {
-    internal class SubstractFundsStrategy
+    public class SubstractFundsStrategy : IFundsStrategy
     {
         public FundsOperation Operation => FundsOperation.Subtract;
 
