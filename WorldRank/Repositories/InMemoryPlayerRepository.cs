@@ -1,3 +1,4 @@
+using Domain.Entity;
 using NLog;
 
 namespace WorldRank.Console

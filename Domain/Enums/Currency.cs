@@ -1,4 +1,4 @@
-﻿namespace WorldRank.Console.Enums
+﻿namespace Domain.Enums
 {
 	public enum Currency
 	{
