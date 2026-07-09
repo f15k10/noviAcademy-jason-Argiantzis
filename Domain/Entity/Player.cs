@@ -1,5 +1,3 @@
-using WorldRank.Console.Enums;
-
 namespace Domain.Entity;
 
 public class Player : IPlayer

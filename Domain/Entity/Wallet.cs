@@ -1,5 +1,5 @@
 using Domain.Enums;
-using WorldRank.Console.Exceptions;
+using Domain.Exceptions;
 
 namespace Domain.Entity
 {
