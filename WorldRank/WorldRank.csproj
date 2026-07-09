@@ -8,7 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CustomException\**" />
+    <EmbeddedResource Remove="CustomException\**" />
+    <None Remove="CustomException\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.9" />
+    <PackageReference Include="NLog" Version="6.1.4" />
   </ItemGroup>
 
 </Project>
