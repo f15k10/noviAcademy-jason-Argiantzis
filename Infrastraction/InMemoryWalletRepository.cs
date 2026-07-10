@@ -63,7 +63,7 @@ namespace Infrastructure
 			_logger.Info("Player {PlayerId} {Currency} wallet unblocked", playerId, currency);
 		}
 
-		private Wallet GetWallet(int playerId, Currency currency)
+		public Wallet GetWallet(int playerId, Currency currency)
 		{
 			var wallet = _wallets.SingleOrDefault(item => item.PlayerId == playerId && item.Currency == currency);
 

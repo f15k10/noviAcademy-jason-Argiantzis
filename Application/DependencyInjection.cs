@@ -2,7 +2,7 @@
 using Application.Strategies;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Application.Interfaces
+namespace Application
 {
     public static class DependencyInjection
     {
