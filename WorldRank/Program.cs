@@ -1,11 +1,5 @@
-using Application.Repositories;
-using WorldRank.Domain.Entity;
-using WorldRank.Domain.Enums;
-using WorldRank.Infrastructure;
 using Microsoft.Extensions.DependencyInjection;
 using NLog;
-using WorldRank.Application.Interfaces;
-using WorldRank.Domain.Exceptions;
 using WorldRank.Console;
 using WorldRank.Application.Service;
 
@@ -17,7 +11,7 @@ using var provider = services.BuildServiceProvider();
 
 var playerService = provider.GetRequiredService<PlayerService>();
 var walletService = provider.GetRequiredService<WalletService>();
-//Wallets are stored in their own repository and reference the player via PlayerId
+
 logger.Info("Application started. ======= NovibetAcademy =====");
 
 logger.Info("Application started.");
