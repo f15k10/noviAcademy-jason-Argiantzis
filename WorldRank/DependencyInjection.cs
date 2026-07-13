@@ -1,7 +1,7 @@
-﻿using Application;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
+using WorldRank.Application;
 using WorldRank.Infrastructure;
 
 namespace WorldRank.Console
