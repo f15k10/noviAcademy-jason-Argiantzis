@@ -2,7 +2,7 @@
 using Application.Strategies;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Application
+namespace WorldRank.Application
 {
     public static class DependencyInjection
     {

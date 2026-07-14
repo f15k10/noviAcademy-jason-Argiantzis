@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
+using WorldRank.Application;
 using WorldRank.Infrastructure;
 using WorldRank.Infrastructure.Persistencies.Context;
 
