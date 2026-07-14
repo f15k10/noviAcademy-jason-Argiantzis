@@ -1,8 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Application;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using NLog.Extensions.Logging;
 using WorldRank.Application;
 using WorldRank.Infrastructure;
+using WorldRank.Infrastructure.Persistencies.Context;
 
 namespace WorldRank.Console
 {
@@ -10,6 +13,10 @@ namespace WorldRank.Console
     {
         public static IServiceCollection AddWorldRank(this IServiceCollection services)
         {
+            services.AddDbContext<WorldRankDbContext>(options =>
+                options.UseSqlServer(
+                    "Server=localhost;Database=WorldRankDb;Trusted_Connection=True;TrustServerCertificate=True;"));
+
             services.AddLogging(builder =>
             {
                 builder.ClearProviders();
