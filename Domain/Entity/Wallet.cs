@@ -11,7 +11,15 @@ namespace NoviCode.Domain.Entity
 		public decimal Balance { get; private set; }
 		public bool IsBlocked { get; private set; }
         private static readonly Random Random = new();
-
+		//This const is for unit test only
+        public Wallet(int id, int playerId, Currency currency,decimal balance, bool isBlocked = false)
+        {
+            Id = id;
+            PlayerId = playerId;
+            Currency = currency;
+			Balance = balance;
+            IsBlocked = isBlocked;
+        }
         public Wallet(int playerId, Currency currency, bool isBlocked = false)
 		{
 			Id= GenerateRandomInt(1, 9999);
@@ -19,6 +27,7 @@ namespace NoviCode.Domain.Entity
 			Currency = currency;
 			IsBlocked = isBlocked;
 		}
+     
         public static int GenerateRandomInt(int min, int max)
         {
             return Random.Next(min, max + 1);
