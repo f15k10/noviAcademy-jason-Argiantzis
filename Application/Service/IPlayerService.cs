@@ -1,6 +1,6 @@
-﻿using WorldRank.Domain.Entity;
+﻿using NoviCode.Domain.Entity;
 
-namespace WorldRank.Application.Service
+namespace NoviCode.Application.Service
 {
     public interface IPlayerService
     {

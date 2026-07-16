@@ -1,8 +1,6 @@
-﻿using WorldRank.Domain.Entity;
-using WorldRank.Domain.Enums;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NoviCode.Domain.Entity;
+using NoviCode.Domain.Enums;
+
 
 namespace Application.Strategies
 {

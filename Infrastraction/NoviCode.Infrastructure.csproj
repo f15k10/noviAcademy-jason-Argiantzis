@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\WorldRank.Application.csproj" />
-    <ProjectReference Include="..\Domain\WorldRank.Domain.csproj" />
+    <ProjectReference Include="..\Application\NoviCode.Application.csproj" />
+    <ProjectReference Include="..\Domain\NoviCode.Domain.csproj" />
   </ItemGroup>
 
 </Project>

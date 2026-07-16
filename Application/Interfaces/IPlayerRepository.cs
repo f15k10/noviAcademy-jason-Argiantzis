@@ -1,4 +1,4 @@
-﻿using WorldRank.Domain.Entity;
+﻿using NoviCode.Domain.Entity;
 
 namespace Application.Repositories
 {

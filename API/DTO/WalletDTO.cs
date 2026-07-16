@@ -1,7 +1,7 @@
-﻿using WorldRank.Domain.Entity;
-using WorldRank.Domain.Enums;
+﻿using NoviCode.Domain.Entity;
+using NoviCode.Domain.Enums;
 
-namespace API.DTO
+namespace NoviCode.API.DTO
 {
     public record  CreateWalletRequest(int PlayerId, Currency currency);
 

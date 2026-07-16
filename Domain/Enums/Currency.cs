@@ -1,4 +1,4 @@
-﻿namespace WorldRank.Domain.Enums
+﻿namespace NoviCode.Domain.Enums
 {
 	public enum Currency
 	{

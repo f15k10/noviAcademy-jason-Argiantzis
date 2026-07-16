@@ -2,7 +2,7 @@
 using MediatR;
 using Microsoft.Extensions.Logging;
 
-namespace WorldRank.Application.Decorators
+namespace NoviCode.Application.Decorators
 {
     public class LoggingDecorator<TRequest,TResult> : IRequestHandler<TRequest,TResult>
     where TRequest : IRequest<TResult>  

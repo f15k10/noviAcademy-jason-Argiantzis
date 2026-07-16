@@ -1,6 +1,6 @@
-﻿using WorldRank.Domain.Entity;
+﻿using NoviCode.Domain.Entity;
 
-namespace API.DTO
+namespace NoviCode.API.DTO
 {
     public record CreatePlayerRequest(string Name,int Score);
 

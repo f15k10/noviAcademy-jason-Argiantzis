@@ -1,7 +1,7 @@
-using WorldRank.Domain.Entity;
+using NoviCode.Domain.Entity;
 
 
-namespace WorldRank.Application.Interfaces
+namespace NoviCode.Application.Interfaces
 {
 	public interface IWalletRepository
 	{

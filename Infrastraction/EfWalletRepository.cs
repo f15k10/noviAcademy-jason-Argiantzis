@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WorldRank.Application.Interfaces;
-using WorldRank.Domain.Entity;
-using WorldRank.Infrastructure.Persistencies.Context;
+using NoviCode.Application.Interfaces;
+using NoviCode.Domain.Entity;
+using NoviCode.Infrastructure.Persistencies.Context;
 
-namespace WorldRank.Infrastructure
+namespace NoviCode.Infrastructure
 {
     public class EfWalletRepository : IWalletRepository
     {

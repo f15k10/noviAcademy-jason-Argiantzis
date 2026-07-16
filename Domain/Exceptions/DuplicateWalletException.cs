@@ -1,6 +1,7 @@
-using WorldRank.Domain.Enums;
+using NoviCode.Domain.Enums;
+using NoviCode.Domain.Exceptions;
 
-namespace WorldRank.Domain.Exceptions
+namespace NoviCode.Domain.Exceptions
 {
 	public class DuplicateWalletException : WalletException
 	{

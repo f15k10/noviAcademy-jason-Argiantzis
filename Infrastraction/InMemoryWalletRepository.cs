@@ -1,9 +1,9 @@
-using WorldRank.Application.Interfaces;
-using WorldRank.Domain.Entity;
+using NoviCode.Application.Interfaces;
+using NoviCode.Domain.Entity;
 
 
 
-namespace WorldRank.Infrastructure
+namespace NoviCode.Infrastructure
 {
     public class InMemoryWalletRepository : IWalletRepository
     {

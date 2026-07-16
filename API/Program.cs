@@ -4,14 +4,14 @@ using Autofac.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using NLog.Extensions.Logging;
 using System.Text.Json.Serialization;
-using WorldRank.Application.Cache;
-using WorldRank.Application.Interfaces;
-using WorldRank.Application.Modules;
-using WorldRank.Application.Service;
-using WorldRank.Infrastructure;
-using WorldRank.Infrastructure.Caching;
-using WorldRank.Infrastructure.Modules;
-using WorldRank.Infrastructure.Persistencies.Context;
+using NoviCode.Application.Cache;
+using NoviCode.Application.Interfaces;
+using NoviCode.Application.Modules;
+using NoviCode.Application.Service;
+using NoviCode.Infrastructure;
+using NoviCode.Infrastructure.Caching;
+using NoviCode.Infrastructure.Modules;
+using NoviCode.Infrastructure.Persistencies.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Design;
 
 
-namespace WorldRank.Infrastructure.Persistencies.Context
+namespace NoviCode.Infrastructure.Persistencies.Context
 {
     public class AppDbContextFactory : IDesignTimeDbContextFactory<WorldRankDbContext>
     {

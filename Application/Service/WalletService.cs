@@ -1,11 +1,11 @@
 ﻿using Application.Strategies;
 using Microsoft.Extensions.Logging;
-using WorldRank.Application.Cache;
-using WorldRank.Application.Interfaces;
-using WorldRank.Domain.Entity;
-using WorldRank.Domain.Enums;
+using NoviCode.Application.Cache;
+using NoviCode.Application.Interfaces;
+using NoviCode.Domain.Entity;
+using NoviCode.Domain.Enums;
 
-namespace WorldRank.Application.Service
+namespace NoviCode.Application.Service
 {
     public class WalletService : IWalletService
     {

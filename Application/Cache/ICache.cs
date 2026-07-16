@@ -1,4 +1,4 @@
-﻿namespace WorldRank.Application.Cache
+﻿namespace NoviCode.Application.Cache
 {
     public interface ICache
     {

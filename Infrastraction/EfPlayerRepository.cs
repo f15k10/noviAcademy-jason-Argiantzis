@@ -1,9 +1,9 @@
 ﻿using Application.Repositories;
 using Microsoft.EntityFrameworkCore;
-using WorldRank.Domain.Entity;
-using WorldRank.Infrastructure.Persistencies.Context;
+using NoviCode.Domain.Entity;
+using NoviCode.Infrastructure.Persistencies.Context;
 
-namespace WorldRank.Infrastructure
+namespace NoviCode.Infrastructure
 {
     public class EfPlayerRepository : IPlayerRepository
     {

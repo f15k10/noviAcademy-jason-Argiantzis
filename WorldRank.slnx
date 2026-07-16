@@ -1,7 +1,7 @@
 <Solution>
-  <Project Path="API/API.csproj" Id="3c199f4f-7e85-44f3-8e91-fb51dc7e43b6" />
-  <Project Path="Application/WorldRank.Application.csproj" Id="9ffc3a59-27aa-4707-976a-05c83ada179e" />
-  <Project Path="Domain/WorldRank.Domain.csproj" Id="a34e5be8-ef40-410e-8dce-7c6ea72373ef" />
-  <Project Path="GateWay/GateWay.csproj" Id="6cb28844-90c5-4ebc-9aca-5e376ef433ad" />
-  <Project Path="Infrastraction/WorldRank.Infrastructure.csproj" Id="3683a0a6-9a18-4c08-b6cd-11b8dcf34176" />
+  <Project Path="API/NoviCode.API.csproj" Id="3c199f4f-7e85-44f3-8e91-fb51dc7e43b6" />
+  <Project Path="Application/NoviCode.Application.csproj" Id="9ffc3a59-27aa-4707-976a-05c83ada179e" />
+  <Project Path="Domain/NoviCode.Domain.csproj" Id="a34e5be8-ef40-410e-8dce-7c6ea72373ef" />
+  <Project Path="GateWay/NoviCode.GateWay.csproj" Id="6cb28844-90c5-4ebc-9aca-5e376ef433ad" />
+  <Project Path="Infrastraction/NoviCode.Infrastructure.csproj" Id="3683a0a6-9a18-4c08-b6cd-11b8dcf34176" />
 </Solution>

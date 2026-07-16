@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WorldRank.Domain.Entity;
+using NoviCode.Domain.Entity;
 
-namespace WorldRank.Infrastructure.Persistencies.Context
+namespace NoviCode.Infrastructure.Persistencies.Context
 {
     public  class WorldRankDbContext : DbContext
     {

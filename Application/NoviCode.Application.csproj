@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Domain\WorldRank.Domain.csproj" />
+    <ProjectReference Include="..\Domain\NoviCode.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

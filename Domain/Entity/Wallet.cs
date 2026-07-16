@@ -1,7 +1,7 @@
-using WorldRank.Domain.Enums;
-using WorldRank.Domain.Exceptions;
+using NoviCode.Domain.Enums;
+using NoviCode.Domain.Exceptions;
 
-namespace WorldRank.Domain.Entity
+namespace NoviCode.Domain.Entity
 {
 	public class Wallet : IWallet
 	{

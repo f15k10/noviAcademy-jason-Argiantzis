@@ -1,4 +1,4 @@
-namespace WorldRank.Domain.Entity
+namespace NoviCode.Domain.Entity
 {
     public interface IPlayer
 	{

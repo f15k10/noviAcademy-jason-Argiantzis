@@ -2,8 +2,8 @@
 using MediatR;
 using MediatR.Extensions.Autofac.DependencyInjection;
 using MediatR.Extensions.Autofac.DependencyInjection.Builder;
-using WorldRank.Application.Decorators;
-namespace WorldRank.Application.Modules
+using NoviCode.Application.Decorators;
+namespace NoviCode.Application.Modules
 {
     public class ApplicationModule : Autofac.Module
     {

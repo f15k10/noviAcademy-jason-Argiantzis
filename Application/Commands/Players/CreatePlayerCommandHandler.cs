@@ -1,9 +1,9 @@
 ﻿using MediatR;
 
-using WorldRank.Application.Interfaces;
-using WorldRank.Domain.Entity;
+using NoviCode.Application.Interfaces;
+using NoviCode.Domain.Entity;
 
-namespace WorldRank.Application.Commands.Players
+namespace NoviCode.Application.Commands.Players
 {
     public class CreatePlayerCommandHandler : IRequestHandler<CreatePlayerCommand,int>
     {

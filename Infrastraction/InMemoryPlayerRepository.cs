@@ -1,9 +1,9 @@
 using Application.Repositories;
-using WorldRank.Domain.Entity;
+using NoviCode.Domain.Entity;
 
 
 
-namespace WorldRank.Infrastructure
+namespace NoviCode.Infrastructure
 {
 	public class InMemoryPlayerRepository : IPlayerRepository
 	{

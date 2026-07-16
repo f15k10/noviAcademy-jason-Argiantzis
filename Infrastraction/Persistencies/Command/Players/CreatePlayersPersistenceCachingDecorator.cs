@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using WorldRank.Application.Cache;
-using WorldRank.Application.Interfaces;
-using WorldRank.Domain.Entity;
+﻿using NoviCode.Application.Cache;
+using NoviCode.Application.Interfaces;
+using NoviCode.Domain.Entity;
 
-namespace WorldRank.Infrastructure.Persistencies.Command.Players
+namespace NoviCode.Infrastructure.Persistencies.Command.Players
 {
     public class CreatePlayersPersistenceCachingDecorator : ICreatePlayerPersistence
     {

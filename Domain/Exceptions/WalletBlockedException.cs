@@ -1,6 +1,6 @@
-using WorldRank.Domain.Enums;
+using NoviCode.Domain.Enums;
 
-namespace WorldRank.Domain.Exceptions
+namespace NoviCode.Domain.Exceptions
 {
 	public class WalletBlockedException : WalletException
 	{

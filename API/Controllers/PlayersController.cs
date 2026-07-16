@@ -1,9 +1,9 @@
-﻿using API.DTO;
+﻿using NoviCode.API.DTO;
 using Microsoft.AspNetCore.Mvc;
-using WorldRank.Application.Service;
-using WorldRank.Domain.Entity;
+using NoviCode.Application.Service;
+using NoviCode.Domain.Entity;
 
-namespace API.Controllers
+namespace NoviCode.API.Controllers
 {
     [ApiController]
     [Route("players")]

@@ -1,6 +1,6 @@
-using WorldRank.Domain.Enums;
+using NoviCode.Domain.Enums;
 
-namespace WorldRank.Domain.Entity
+namespace NoviCode.Domain.Entity
 {
 	public interface IWallet
 	{

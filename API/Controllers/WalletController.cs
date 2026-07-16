@@ -1,9 +1,10 @@
-﻿using API.DTO;
+﻿using NoviCode.API.DTO;
 using Microsoft.AspNetCore.Mvc;
-using WorldRank.Application.Service;
-using WorldRank.Domain.Exceptions;
+using NoviCode.Application.Service;
+using NoviCode.Domain.Entity;
+using NoviCode.Domain.Exceptions;
 
-namespace API.Controllers
+namespace NoviCode.API.Controllers
 {
     [ApiController]
     [Route("wallets")]
@@ -29,6 +30,7 @@ namespace API.Controllers
         [HttpPost("{id:int}/deposit")]
         public async Task<IActionResult> Deposit(int id, [FromForm] DepositRequest request, CancellationToken cancellationToken)
         {
+            
             try
             {
                 var wallet = await _wallets.DespositAsync(id, request.Amount, cancellationToken);

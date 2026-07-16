@@ -1,4 +1,4 @@
-namespace WorldRank.Domain.Exceptions
+namespace NoviCode.Domain.Exceptions
 {
 	public class PlayerNotFoundException : Exception
 	{

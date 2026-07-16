@@ -1,8 +1,8 @@
 ﻿using Application.Strategies;
-using WorldRank.Domain.Entity;
-using WorldRank.Domain.Enums;
+using NoviCode.Domain.Entity;
+using NoviCode.Domain.Enums;
 
-namespace WorldRank.Application.Service
+namespace NoviCode.Application.Service
 {
     public interface IWalletService
     {

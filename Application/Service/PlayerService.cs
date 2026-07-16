@@ -1,9 +1,9 @@
 ﻿using Application.Repositories;
 using Microsoft.Extensions.Logging;
-using WorldRank.Application.Cache;
-using WorldRank.Domain.Entity;
+using NoviCode.Application.Cache;
+using NoviCode.Domain.Entity;
 
-namespace WorldRank.Application.Service
+namespace NoviCode.Application.Service
 {
     public class PlayerService : IPlayerService
     {

@@ -1,8 +1,8 @@
 ﻿
 using Microsoft.Extensions.Caching.Memory;
-using WorldRank.Application.Cache;
+using NoviCode.Application.Cache;
 
-namespace WorldRank.Infrastructure.Caching
+namespace NoviCode.Infrastructure.Caching
 {
     public class MemoryCacheStore : ICache
     {

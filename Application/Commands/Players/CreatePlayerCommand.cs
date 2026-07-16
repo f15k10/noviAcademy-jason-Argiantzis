@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace WorldRank.Application.Commands.Players
+namespace NoviCode.Application.Commands.Players
 {
     public record CreatePlayerCommand(string name, int score) : IRequest<int>;
 }

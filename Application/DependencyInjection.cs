@@ -1,8 +1,8 @@
-﻿using WorldRank.Application.Service;
+﻿using NoviCode.Application.Service;
 using Application.Strategies;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace WorldRank.Application
+namespace NoviCode.Application
 {
     public static class DependencyInjection
     {

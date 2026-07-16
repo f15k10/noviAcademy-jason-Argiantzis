@@ -1,4 +1,4 @@
-﻿namespace WorldRank.Infrastructure.Persistencies.Context
+﻿namespace NoviCode.Infrastructure.Persistencies.Context
 {
     public static class DbConnection
     {

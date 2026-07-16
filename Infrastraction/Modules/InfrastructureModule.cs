@@ -1,11 +1,8 @@
 ﻿using Autofac;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using WorldRank.Application.Interfaces;
-using WorldRank.Infrastructure.Persistencies.Command.Players;
+using NoviCode.Application.Interfaces;
+using NoviCode.Infrastructure.Persistencies.Command.Players;
 
-namespace WorldRank.Infrastructure.Modules
+namespace NoviCode.Infrastructure.Modules
 {
     public class InfrastructureModule : Autofac.Module
     {
